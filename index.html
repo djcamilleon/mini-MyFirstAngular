@@ -9,8 +9,16 @@
 </head>
 <body class="background" ng-controller="mainCtrl">
 
-<p> My name is: {{name}} </p>
+    <h1>My Friends</h1>
 
+    <div ng-repeat="friend in myFriends">
+    <p> {{friend}} </p>
+    </div>
+
+    <div>
+        <input ng-model="newFriend"/>
+        <button ng-click="addGuest()">Add Friend!</button>
+    </div>
 
 
 
